@@ -1,8 +1,29 @@
 aid: divx-inc-nasdaqgs-divx
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/divx-inc-nasdaqgs-divx.png
 name: DivX, Inc. (NasdaqGS:DIVX)
-description: DivX, Inc. (NasdaqGS:DIVX) is a company surfaced as a portfolio company of insight-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  DivX is a San Diego-based digital video technology company best known for the
+  DivX video codec and format. Under the former public company DivX, Inc.
+  (NasdaqGS:DIVX), and today as DivX, LLC, it offers free and premium consumer
+  software — DivX Software and DivX Pro for Windows and macOS — for playing,
+  converting, and casting video, alongside a technology-licensing business that
+  certifies DivX and HEVC playback in consumer electronics devices (the "DivX
+  Certified" program). The company distributes desktop applications to end users
+  and licenses codecs and playback technology to device manufacturers rather
+  than operating a public developer API platform. Customer support is handled
+  through a Zendesk help center, and enterprise/device partners are served via a
+  Salesforce-based partner portal.
 url: https://raw.githubusercontent.com/api-evangelist/divx-inc-nasdaqgs-divx/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +33,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Video
+- Codec
+- Media
+- Streaming
+- Software
 apis: []
+common:
+- type: DomainSecurity
+  url: security/divx-inc-nasdaqgs-divx-domain-security.yml
+- type: Website
+  url: https://www.divx.com
+- type: Support
+  url: https://divx.zendesk.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
